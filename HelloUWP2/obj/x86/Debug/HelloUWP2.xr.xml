@@ -74,6 +74,7 @@
       <RootProperty Name="Foreground" />
       <RootProperty Name="Width" />
       <RootProperty Name="Name" />
+      <RootProperty Name="VerticalAlignment" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="HelloUWP2.MainNav" />

@@ -132,19 +132,21 @@ namespace HelloUWP2.HelloUWP2_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[5];
+            _typeNameTable = new string[6];
             _typeNameTable[0] = "HelloUWP2.MainNav";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
             _typeNameTable[3] = "HelloUWP2.MainPage";
             _typeNameTable[4] = "HelloUWP2.PoliceStressSignal";
+            _typeNameTable[5] = "HelloUWP2.SignUpPage";
 
-            _typeTable = new global::System.Type[5];
+            _typeTable = new global::System.Type[6];
             _typeTable[0] = typeof(global::HelloUWP2.MainNav);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
             _typeTable[3] = typeof(global::HelloUWP2.MainPage);
             _typeTable[4] = typeof(global::HelloUWP2.PoliceStressSignal);
+            _typeTable[5] = typeof(global::HelloUWP2.SignUpPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -182,6 +184,7 @@ namespace HelloUWP2.HelloUWP2_XamlTypeInfo
         private object Activate_0_MainNav() { return new global::HelloUWP2.MainNav(); }
         private object Activate_3_MainPage() { return new global::HelloUWP2.MainPage(); }
         private object Activate_4_PoliceStressSignal() { return new global::HelloUWP2.PoliceStressSignal(); }
+        private object Activate_5_SignUpPage() { return new global::HelloUWP2.SignUpPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -218,6 +221,13 @@ namespace HelloUWP2.HelloUWP2_XamlTypeInfo
             case 4:   //  HelloUWP2.PoliceStressSignal
                 userType = new global::HelloUWP2.HelloUWP2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_4_PoliceStressSignal;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 5:   //  HelloUWP2.SignUpPage
+                userType = new global::HelloUWP2.HelloUWP2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_5_SignUpPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

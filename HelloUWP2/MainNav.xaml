@@ -34,7 +34,7 @@
                             <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="36"
                                        Text="&#xE80F;"/>
                             <TextBlock Name="homeTextBlock" Text="Home" 
-                                       FontSize="26" Margin="20,0,0,0"/>
+                                       FontSize="24" Margin="20,0,0,0"/>
                         </StackPanel>
                     </ListBoxItem>
                 </ListBox>
