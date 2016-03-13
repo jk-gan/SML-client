@@ -1,0 +1,8 @@
+﻿<Application
+    x:Class="HelloUWP2.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HelloUWP2"
+    RequestedTheme="Light">
+
+</Application>

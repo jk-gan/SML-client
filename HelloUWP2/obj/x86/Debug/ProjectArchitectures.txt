@@ -1,0 +1,1 @@
+C:\Users\Usere\Documents\Visual Studio 2015\Projects\HelloUWP2\HelloUWP2\HelloUWP2.csproj;x86
